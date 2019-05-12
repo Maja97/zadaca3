@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001685</color>
+    <color name="colorPrimaryDark">#02062B</color>
+    <color name="colorAccent">#C147CC</color>
+    <color name="editTextHint">#BBC1E2</color>
+    <color name="tvEnterInfoTextColor">#090C57</color>
+    <color name="resultsBackground">#89000000</color>
+    <color name="whiteColor">#ffffff</color>
+</resources>

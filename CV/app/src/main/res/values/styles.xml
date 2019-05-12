@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="subHeadingStyle">
+        <item name="android:textSize">@dimen/subHeadingTextSize</item>
+        <item name="android:textColor">@color/headerColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">@dimen/subHeadingMargin</item>
+        <item name="android:layout_marginEnd">@dimen/subHeadingMargin</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:fontFamily">serif-monospace</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/headerColor</item>
+    </style>
+
+    <style name="underlineSubheading">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/headerColor</item>
+    </style>
+
+    <style name="infoStyle">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

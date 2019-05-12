@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="underweight_description">You are underweight. You may be malnourished and develop various diseases. Risks include: malnutrition, vitamin deficiencies, anemia or osteoporosis from too little vitamin D and calcium. There is a greater risk for mortality compared to the people with a normal BMI.</string>
+    <string name="normal_description">You have the perfect weight. You should maintain this weight by keeping track of your food and water intake and exercising regularly. The risk of developing any diseases is minimal for your body type.</string>
+    <string name="overweight_description">You are a bit overweight. Increased weight can be a warning sign for many dangerous illnesses, therefore you should start a balanced diet and exercise more.</string>
+    <string name="obese_description">You are obese and there\'s a high chance of increased blood pressure. High blood pressure is the leading cause of strokes. Excess weight also increases your chances of developing other problems linked to strokes, including high cholesterol, high blood sugar, and heart disease.
+    </string>
+    <string name="extremely_obese_description">You are extremely obese and the chance of developing obesity-related health problems, such as diabetes or hypertension, is very high. Other symptoms of extreme obesity may include excess fat buildup around the body, being easily winded, difficulty walking and trouble breathing.
+    </string>
+    <string name="twoDecimalPlaces">%.2f</string>
+    <string name="underweight_name">Underweight</string>
+    <string name="normal_name">Normal</string>
+    <string name="overweight_name">Overweight</string>
+    <string name="obese_name">Obese</string>
+    <string name="extremely_obese_name">Extremely\nobese</string>
+    <string name="imageDescription">bodyTypeImage</string>
+    <string name="tvEnterHeightText">Enter your height in meters:</string>
+    <string name="etHeightHint">meters</string>
+    <string name="tvEnterWeightText">Enter your weight in kilograms:</string>
+    <string name="etWeightHint">kilograms</string>
+    <string name="buttonCalculateText">Calculate</string>
+</resources>

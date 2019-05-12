@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity"
+        android:background="@drawable/background">
+
+    <RelativeLayout
+            android:id="@+id/headingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headingHeight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/headerColor"
+            android:layout_marginTop="@dimen/headingMargins">
+
+        <TextView
+                android:id="@+id/personName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_surname"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/subHeadingMargin"
+                android:textColor="@color/nameColor"
+                android:fontFamily="serif-monospace"
+                android:textSize="@dimen/nameSize"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:contentDescription="@string/photoDescription"
+            android:id="@+id/personPhoto"
+            android:layout_width="@dimen/photoDimens"
+            android:layout_height="@dimen/photoDimens"
+            android:src="@drawable/bowie"
+            app:layout_constraintLeft_toLeftOf="@+id/headingLayout"
+            android:layout_marginStart="@dimen/photoMargins"
+            android:layout_marginTop="@dimen/photoMargins"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/textViewGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45"/>
+
+
+    <TextView
+            android:id="@+id/tvSubHeadingPersonalInfo"
+            android:layout_width="@dimen/subHeadingWidth"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/headingLayout"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            style="@style/subHeadingStyle"
+            android:text="@string/subHeadingPersonalInfo"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingPersonalInfo"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingPersonalInfo"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingPersonalInfo"/>
+
+    <TextView
+            android:id="@+id/tvPersonalInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingPersonalInfo"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            android:text="@string/personalInfo"
+            style="@style/infoStyle"/>
+
+    <TextView
+            android:id="@+id/tvSubHeadingSkills"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/subHeadingWidth"
+            app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            android:text="@string/subHeadingSkills"
+            style="@style/subHeadingStyle"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingSkills"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingSkills"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingSkills"/>
+
+    <TextView
+            android:id="@+id/tvSkillsInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingSkills"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            style="@style/infoStyle"
+            android:text="@string/skillsInfo"/>
+
+    <TextView
+            android:id="@+id/tvSubHeadingInterests"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/subHeadingWidth"
+            app:layout_constraintTop_toBottomOf="@id/tvSkillsInfo"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            android:text="@string/subHeadingInterests"
+            style="@style/subHeadingStyle"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingInterests"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingInterests"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingInterests"/>
+
+    <TextView
+            android:id="@+id/tvInterestsInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingInterests"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            style="@style/infoStyle"
+            android:text="@string/interestsInfo"/>
+
+    <TextView android:id="@+id/tvSubHeadingHobbies"
+              android:layout_height="wrap_content"
+              android:layout_width="@dimen/subHeadingWidth"
+              app:layout_constraintTop_toBottomOf="@id/tvInterestsInfo"
+              app:layout_constraintStart_toStartOf="@id/headingLayout"
+              app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+              android:text="@string/subHeadingHobbies"
+              style="@style/subHeadingStyle"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingHobbies"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingHobbies"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingHobbies"/>
+
+    <TextView
+            android:id="@+id/tvHobbiesInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingHobbies"
+            app:layout_constraintEnd_toEndOf="@id/textViewGuideline"
+            app:layout_constraintStart_toStartOf="@id/headingLayout"
+            style="@style/infoStyle"
+            android:text="@string/hobbiesInfo"/>
+
+    <Button
+            android:id="@+id/buttonGenerateQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvHobbiesInfo"
+            app:layout_constraintStart_toStartOf="@id/tvHobbiesInfo"
+            app:layout_constraintEnd_toEndOf="@id/tvHobbiesInfo"
+            android:text="@string/buttonGenerateQuoteText"
+            android:textSize="@dimen/subHeadingTextSize"
+            android:textColor="@color/headerColor"
+            android:fontFamily="casual"
+            android:padding="@dimen/buttonPadding"
+            android:layout_marginTop="@dimen/buttonTopMargin"
+            android:background="@color/buttonBackgroundColor"/>
+
+    <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            app:layout_constraintTop_toBottomOf="@id/headingLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"/>
+
+    
+    <TextView
+            android:id="@+id/tvSubHeadingEducation"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/subHeadingWidth"
+            app:layout_constraintTop_toBottomOf="@id/headingLayout"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/subHeadingEducation"
+            style="@style/subHeadingStyle"
+            android:layout_marginStart="@dimen/rightContentStartMargin"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingEducation"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingEducation"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingEducation"/>
+
+    <TextView
+            android:id="@+id/tvEducationInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingEducation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            android:layout_marginStart="@dimen/rightContentStartMargin"
+            style="@style/infoStyle"
+            android:text="@string/educationInfo"/>
+
+    <TextView
+            android:id="@+id/tvSubHeadingWorkExperience"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/subHeadingWidth"
+            app:layout_constraintTop_toBottomOf="@id/tvEducationInfo"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/subHeadingWorkExperience"
+            style="@style/subHeadingStyle"
+            android:layout_marginStart="@dimen/rightContentStartMargin"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingWorkExperience"
+            app:layout_constraintEnd_toEndOf="@id/tvSubHeadingWorkExperience"
+            app:layout_constraintStart_toStartOf="@id/tvSubHeadingWorkExperience"/>
+
+    <TextView
+            android:id="@+id/tvWorkExperienceInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubHeadingWorkExperience"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            style="@style/infoStyle"
+            android:layout_marginStart="@dimen/rightContentStartMargin"
+            android:text="@string/workExperienceInfo"/>
+
+    <TextView
+            android:id="@+id/tvSubheadingAchievements"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/subHeadingWidth"
+            app:layout_constraintTop_toBottomOf="@id/tvWorkExperienceInfo"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/subHeadingAchievements"
+            style="@style/subHeadingStyle"
+            android:layout_marginStart="@dimen/rightContentStartMargin"/>
+
+    <View
+            style="@style/underlineSubheading"
+            app:layout_constraintTop_toBottomOf="@id/tvSubheadingAchievements"
+            app:layout_constraintEnd_toEndOf="@id/tvSubheadingAchievements"
+            app:layout_constraintStart_toStartOf="@id/tvSubheadingAchievements"/>
+
+    <TextView
+            android:id="@+id/tvAchievementsInfo"
+            app:layout_constraintTop_toBottomOf="@id/tvSubheadingAchievements"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewGuideline"
+            style="@style/infoStyle"
+            android:layout_marginStart="@dimen/rightContentStartMargin"
+            android:text="@string/achievementsInfo"/>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
+

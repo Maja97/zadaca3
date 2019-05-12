@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="subHeadingTextSize">16sp</dimen>
+    <dimen name="subHeadingMargin">20dp</dimen>
+    <dimen name="nameSize">24sp</dimen>
+    <dimen name="headingMargins">20dp</dimen>
+    <dimen name="headingHeight">80dp</dimen>
+    <dimen name="photoDimens">100dp</dimen>
+    <dimen name="photoMargins">10dp</dimen>
+    <dimen name="rightContentStartMargin">10dp</dimen>
+    <dimen name="subHeadingWidth">0dp</dimen>
+    <dimen name="buttonTopMargin">10dp</dimen>
+    <dimen name="buttonPadding">10dp</dimen>
+</resources>

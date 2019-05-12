@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/resultActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.result.ResultActivity">
+
+    <ImageView
+            android:contentDescription="@string/imageDescription"
+            android:id="@+id/personSilhouette"
+            android:layout_width="@dimen/imageWidth"
+            android:layout_height="@dimen/imageHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/imageMarginStart"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/personSilhouette"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop"
+            android:background="@color/resultsBackground">
+
+        <TextView android:id="@+id/tvResultName"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/resultNameTextSize"
+                  android:textColor="@color/whiteColor"
+                  android:layout_marginStart="@dimen/resultNameMargins"
+                  android:layout_marginEnd="@dimen/resultNameMargins"
+                  android:fontFamily="serif"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentStart="true"/>
+
+        <TextView android:id="@+id/tvResultNumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/resultNumberTextSize"
+                  android:fontFamily="serif"
+                  android:layout_centerHorizontal="true"
+                  android:textColor="@color/whiteColor"
+                  android:layout_alignEnd="@id/tvResultName"
+                  android:layout_below="@id/tvResultName"/>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/tvResultDescription"
+              android:layout_width="@dimen/tvDescriptionWidth"
+              android:layout_height="@dimen/tvDescriptionHeight"
+              android:textColor="@color/whiteColor"
+              android:fontFamily="serif"
+              android:background="@color/resultsBackground"
+              android:layout_marginTop="@dimen/descriptionTopMargin"
+              app:layout_constraintStart_toStartOf="@id/personSilhouette"
+              app:layout_constraintTop_toBottomOf="@id/personSilhouette"
+              android:textSize="@dimen/descriptionTextSize"
+              android:scrollbars="vertical"/>
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline3"
+            app:layout_constraintGuide_percent="0.6"
+            android:orientation="horizontal"/>
+
+</android.support.constraint.ConstraintLayout>

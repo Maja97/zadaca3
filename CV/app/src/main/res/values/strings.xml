@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">CV</string>
+    <string name="name_surname">David Bowie</string>
+    <string name="photoDescription">David Bowie Photo</string>
+
+    <string name="subHeadingPersonalInfo">Personal Info</string>
+    <string name="personalInfo"><u><b>Name\n</b></u>David Robert Jones\n<u><b>Born\n</b></u>January 1947\n<u><b>Place\n</b></u>Brixton, London, ENG</string>
+
+    <string name="subHeadingSkills">Skills</string>
+    <string name="skillsInfo">× singing\n× songwriting\n× acting</string>
+
+    <string name="subHeadingInterests">Interests</string>
+    <string name="interestsInfo">Interested in music, greatly influenced by Frankie Lymon and the Teenagers, the Platters, Fats Domino, Elvis Presley and Little Richard.</string>
+
+    <string name="subHeadingHobbies">Hobbies</string>
+    <string name="hobbiesInfo">× chess playing\n× reading\n× art collecting\n
+    </string>
+
+    <string name="subHeadingEducation">Education</string>
+    <string name="educationInfo">× went to Burnt Ash Junior School and Bromley Technical High School\n× started playing multiple instruments like ukulele, tea-chest bass and piano\n× studied art, music and design, including layout and typesetting
+    </string>
+
+    <string name="subHeadingWorkExperience">Work experience</string>
+    <string name="workExperienceInfo">× formed the first band at the age of 15, named the Konrads\n× first breakthrough in 1969 - released the single ‘Space Oddity’\n× best known album - ‘The Rise and Fall of Ziggy Stardust and the Spiders from Mars’</string>
+
+    <string name="subHeadingAchievements">Achievements</string>
+    <string name="achievementsInfo">× Ivor Novello Special Award For Originality for the single \'Space Oddity\'\n× two Grammy Awards and three Brit Awards\n× inducted into the Rock and Roll Hall of Fame on 17 January 1996\n
+    </string>
+    <string name="buttonGenerateQuoteText">Generate quote</string>
+
+    <string-array name="quoteArray">
+        <item>I don\'t know where I\'m going from here, but I promise it won\'t be boring.</item>
+        <item>The truth is of course that there is no journey. We are arriving and departing all at the same time.</item>
+        <item>I\'m an instant star. Just add water and stir.</item>
+        <item>I\'m not a prophet or a stone aged man, just a mortal with potential of a superman. I\'m living on.</item>
+        <item>I believe that I often bring out the best in somebody\'s talents.</item>
+        <item>I don\'t see any boundaries between any of the art forms. I think they all inter-relate completely.</item>
+        <item>I change my mind a lot. I usually don\'t agree with what I say very much. I\'m an awful liar.</item>
+        <item>On the other hand, what I like my music to do to me is awaken the ghosts inside of me. Not the demons, you understand, but the ghosts.</item>
+        <item>For me, the world that I inhabit in reality is probably a very different world than the one people expect that I would be in.</item>
+        <item>Even though I was very shy, I found I could get onstage if I had a new identity.</item>
+    </string-array>
+</resources>

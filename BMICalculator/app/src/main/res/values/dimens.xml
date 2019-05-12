@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topMargin">50dp</dimen>
+    <dimen name="tvEnterInfoStartMargin">30dp</dimen>
+    <dimen name="tvEnterInfoTextSize">18sp</dimen>
+    <dimen name="buttonCalculateWidth">125dp</dimen>
+    <dimen name="buttonCalculatePadding">10dp</dimen>
+    <dimen name="marginTop">100dp</dimen>
+    <dimen name="imageMarginStart">30dp</dimen>
+    <dimen name="resultNameTextSize">30sp</dimen>
+    <dimen name="resultNameMargins">10dp</dimen>
+    <dimen name="resultNumberTextSize">25sp</dimen>
+    <dimen name="tvDescriptionWidth">300dp</dimen>
+    <dimen name="tvDescriptionHeight">200dp</dimen>
+    <dimen name="descriptionTopMargin">20dp</dimen>
+    <dimen name="descriptionTextSize">20sp</dimen>
+    <dimen name="imageWidth">0dp</dimen>
+    <dimen name="imageHeight">250dp</dimen>
+</resources>

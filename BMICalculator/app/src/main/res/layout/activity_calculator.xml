@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calculatorActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.base.BaseActivity"
+        android:background="@drawable/calculator_background">
+
+    <TextView
+            android:id="@+id/tvEnterHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etHeight"
+            android:text="@string/tvEnterHeightText"
+            android:layout_marginStart="@dimen/tvEnterInfoStartMargin"
+            android:textSize="@dimen/tvEnterInfoTextSize"
+            android:textColor="@color/tvEnterInfoTextColor"/>
+
+    <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/etHeightHint"
+            app:layout_constraintBottom_toTopOf="@+id/tvEnterWeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            android:textColorHint="@color/editTextHint"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:maxLines="1"/>
+    <TextView
+            android:id="@+id/tvEnterWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etWeight"
+            android:text="@string/tvEnterWeightText"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginStart="@dimen/tvEnterInfoStartMargin"
+            android:textSize="@dimen/tvEnterInfoTextSize"
+            android:textColor="@color/tvEnterInfoTextColor"/>
+
+    <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:hint="@string/etWeightHint"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            android:textColorHint="@color/editTextHint"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:maxLines="1"/>
+
+    <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="@dimen/buttonCalculateWidth"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/buttonCalculateText"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            android:layout_marginTop="@dimen/topMargin"
+            android:padding="@dimen/buttonCalculatePadding"
+            android:background="@color/editTextHint"
+            android:textColor="@color/tvEnterInfoTextColor"/>
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline"
+            app:layout_constraintGuide_percent="0.3"
+            android:orientation="horizontal"/>
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline2"
+            app:layout_constraintGuide_percent="0.7"
+            android:orientation="vertical"/>
+
+</android.support.constraint.ConstraintLayout>
